@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #888;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  margin-top: 60px;
+}
+
+.grid-item {
+  box-shadow: 2px 0 0 0 #888, 0 2px 0 0 #888, 2px 2px 0 0 #888,
+    /* Just to fix the corner */ 2px 0 0 0 #888 inset, 0 2px 0 0 #888 inset;
+}
